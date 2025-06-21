@@ -15,6 +15,7 @@ body {
     max-width: 800px; /* Adjust as needed for desired width */
     box-sizing: border-box;
     position: relative; /* This is crucial for positioning the QR code absolutely within it */
+    padding-top: 130px; /* Added padding-top to make space for the QR code and title */
 }
 
 .form-title {
@@ -23,6 +24,12 @@ body {
     margin-bottom: 20px;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
+    position: absolute; /* Make title absolute to position it below QR */
+    top: 20px; /* Position relative to form-container's new padding */
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 60px); /* Adjust width to account for padding */
+    box-sizing: border-box;
 }
 
 .form-section {
@@ -121,14 +128,13 @@ body {
     color: #777;
     border-top: 1px solid #eee;
     padding-top: 10px;
-    /* Removed margin-bottom here as QR code is now at the top */
 }
 
 /* Styles for the QR code container */
 .qr-code-container {
     position: absolute;
-    top: 20px;   /* Changed from 'bottom' to 'top' */
-    right: 20px; /* Remains on the right */
+    top: 20px;   /* Positions QR code from the top of .form-container */
+    right: 20px; /* Positions QR code from the right of .form-container */
     width: 100px; /* Set a fixed width for the QR code container */
     height: 100px; /* Set a fixed height to maintain aspect ratio, adjust as needed */
     z-index: 100; /* Ensure it appears on top of other content */
@@ -162,6 +168,10 @@ body {
     }
     /* Hide QR code when printing */
     .qr-code-container {
+        display: none;
+    }
+    /* Hide the "LAST REF" line when printing */
+    .footer p:first-child {
         display: none;
     }
 }
