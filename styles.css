@@ -133,10 +133,10 @@ body {
 /* Styles for the QR code container */
 .qr-code-container {
     position: absolute;
-    top: 16px;   /* Positions QR code from the top of .form-container */
+    top: 8px;   /* Positions QR code from the top of .form-container */
     left: 20px; /* Positions QR code from the right of .form-container */
-    width: 128px; /* Set a fixed width for the QR code container */
-    height: 128px; /* Set a fixed height to maintain aspect ratio, adjust as needed */
+    width: 112px; /* Set a fixed width for the QR code container */
+    height: 112px; /* Set a fixed height to maintain aspect ratio, adjust as needed */
     z-index: 100; /* Ensure it appears on top of other content */
 }
 
