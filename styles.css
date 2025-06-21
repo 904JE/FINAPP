@@ -33,7 +33,7 @@ body {
 }
 
 .form-section {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     border-bottom: 1px dashed #eee; /* Light lines to mimic the form */
     padding-bottom: 10px;
 }
@@ -115,7 +115,7 @@ body {
 
 .notes-row textarea {
     width: calc(100% - 60px); /* Adjust width for notes textarea */
-    min-height: 80px;
+    min-height: 64px;
     resize: vertical; /* Allow vertical resizing */
     border: 1px solid #ccc; /* Border around textarea */
     padding: 5px;
@@ -135,8 +135,8 @@ body {
     position: absolute;
     top: 20px;   /* Positions QR code from the top of .form-container */
     right: 20px; /* Positions QR code from the right of .form-container */
-    width: 100px; /* Set a fixed width for the QR code container */
-    height: 100px; /* Set a fixed height to maintain aspect ratio, adjust as needed */
+    width: 128px; /* Set a fixed width for the QR code container */
+    height: 128px; /* Set a fixed height to maintain aspect ratio, adjust as needed */
     z-index: 100; /* Ensure it appears on top of other content */
 }
 
@@ -165,13 +165,5 @@ body {
         background-color: #fff !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-    }
-    /* Hide QR code when printing */
-    .qr-code-container {
-        display: none;
-    }
-    /* Hide the "LAST REF" line when printing */
-    .footer p:first-child {
-        display: none;
     }
 }
