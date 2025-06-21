@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Adjust as needed for desired width */
+    box-sizing: border-box;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #eee; /* Light lines to mimic the form */
+    padding-bottom: 10px;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    font-weight: bold;
+    margin-right: 5px;
+    white-space: nowrap; /* Prevent labels from wrapping */
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row input[type="time"],
+.form-row input[type="number"],
+.form-row textarea {
+    flex-grow: 1;
+    border: none;
+    border-bottom: 1px solid #333; /* Underline for input fields */
+    padding: 5px 0;
+    margin-right: 15px; /* Space between inputs */
+    min-width: 80px; /* Ensure inputs have a minimum width */
+}
+
+.form-row input[type="date"],
+.form-row input[type="time"] {
+    flex-grow: 0; /* Don't let date/time take up too much space */
+    min-width: unset;
+    width: auto;
+}
+
+.form-row .short-input {
+    flex-grow: 0;
+    width: 100px; /* Specific width for stock/miles */
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight on focus */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-left: 15px;
+    margin-right: 5px;
+    border-bottom: none; /* No underline for radio buttons */
+    width: auto; /* Prevent radio buttons from stretching */
+    flex-grow: 0;
+}
+
+.radio-group label {
+    font-weight: normal; /* Labels for radio buttons don't need to be bold */
+    margin-right: 2px;
+}
+
+.note {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    margin-left: 10px; /* Indent note */
+}
+
+.notes-row textarea {
+    width: calc(100% - 60px); /* Adjust width for notes textarea */
+    min-height: 80px;
+    resize: vertical; /* Allow vertical resizing */
+    border: 1px solid #ccc; /* Border around textarea */
+    padding: 5px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* Print specific styles */
+@media print {
+    body {
+        margin: 0;
+        background-color: #fff;
+    }
+    .form-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+    }
+    input, textarea {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
