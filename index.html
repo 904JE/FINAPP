@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Application Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">CREDIT APPLICATION INFO</h1>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="salesPerson">SALES PERSON:</label>
+                <input type="text" id="salesPerson" name="salesPerson">
+                <label for="date">DATE:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">TIME:</label>
+                <input type="time" id="time" name="time">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="applicantName">APPLICANT'S NAME:</label>
+                <input type="text" id="applicantName" name="applicantName">
+            </div>
+            <div class="form-row">
+                <label for="cosigner">COSIGNER:</label>
+                <input type="text" id="cosigner" name="cosigner">
+                <label for="relationship">RELATIONSHIP:</label>
+                <input type="text" id="relationship" name="relationship">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="vehicleStock">VEHICLE STOCK #:</label>
+                <input type="text" id="vehicleStock" name="vehicleStock" class="short-input">,
+                <label for="miles">MILES</label>
+                <input type="text" id="miles" name="miles" class="short-input">,
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="downPaymentMin">DOWN PAYMENT: MIN:$</label>
+                <input type="number" id="downPaymentMin" name="downPaymentMin">
+                <label for="downPaymentMax">MAX: $</label>
+                <input type="number" id="downPaymentMax" name="downPaymentMax">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row radio-group">
+                <label>TAG:</label>
+                <input type="radio" id="tagNew" name="tagOption" value="new">
+                <label for="tagNew">NEW</label>
+                <input type="radio" id="tagInDate" name="tagOption" value="in-date">
+                <label for="tagInDate">IN-DATE</label>
+                <input type="radio" id="tagExpired" name="tagOption" value="expired">
+                <label for="tagExpired">EXPIRED</label>
+                <input type="radio" id="tagNeedMetal" name="tagOption" value="need-metal">
+                <label for="tagNeedMetal">NEED METAL</label>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row radio-group">
+                <label>TRADE:</label>
+                <input type="radio" id="tradeYes" name="tradeOption" value="yes">
+                <label for="tradeYes">YES</label>
+                <input type="radio" id="tradeNo" name="tradeOption" value="no">
+                <label for="tradeNo">NO</label>
+                <label for="payOff">10 DAY PAY OFF $</label>
+                <input type="number" id="payOff" name="payOff">
+            </div>
+            <p class="note">*MAKE SURE TO ATTACH TRADE IN SHEET WITH ALL INFO</p>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="vehicle">VEHICLE:</label>
+                <input type="text" id="vehicle" name="vehicle">
+                <label for="acv">ACV</label>
+                <input type="text" id="acv" name="acv">
+            </div>
+            <div class="form-row">
+                <label for="openAutos">OPEN AUTOS?</label>
+                <input type="text" id="openAutos" name="openAutos">
+                <label for="why">WHY?</label>
+                <input type="text" id="why" name="why">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="multipleIncome">MULTIPLE INCOME?</label>
+                <input type="text" id="multipleIncome" name="multipleIncome">
+                <label for="selfEmployed">SELF-EMPLOYED?</label>
+                <input type="text" id="selfEmployed" name="selfEmployed">
+                <label for="explain">IF YES EXPLAIN:</label>
+                <input type="text" id="explain" name="explain">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row">
+                <label for="score">SCORE:</label>
+                <input type="text" id="score" name="score">
+                <label for="repo">REPO:</label>
+                <input type="text" id="repo" name="repo">
+                <label for="needsCosigner">NEEDS COSIGNER</label>
+                <input type="text" id="needsCosigner" name="needsCosigner">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-row notes-row">
+                <label for="notes">NOTES:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>LAST REF 01/2025</p>
+            <p>JAX EXPORTS INC 8859 PHILIPS WHY JACKSONVILLE, FL 32256</p>
+        </div>
+    </div>
+</body>
+</html>
