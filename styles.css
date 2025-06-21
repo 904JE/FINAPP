@@ -121,14 +121,14 @@ body {
     color: #777;
     border-top: 1px solid #eee;
     padding-top: 10px;
-    margin-bottom: 120px; /* Make space for the QR code to prevent overlap */
+    /* Removed margin-bottom here as QR code is now at the top */
 }
 
 /* Styles for the QR code container */
 .qr-code-container {
     position: absolute;
-    bottom: 20px; /* Adjust as needed for vertical spacing from the bottom */
-    right: 20px;  /* Adjust as needed for horizontal spacing from the right */
+    top: 20px;   /* Changed from 'bottom' to 'top' */
+    right: 20px; /* Remains on the right */
     width: 100px; /* Set a fixed width for the QR code container */
     height: 100px; /* Set a fixed height to maintain aspect ratio, adjust as needed */
     z-index: 100; /* Ensure it appears on top of other content */
